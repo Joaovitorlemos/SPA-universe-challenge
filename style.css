@@ -1,0 +1,122 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+
+   --ff-primary: 'Roboto', sans-serif;
+   --fc-heading: #E1E1E6;
+   --fc-text: #E1E1E6;
+   --fc-button: #fff;
+   --fc-hover: #fff;
+}
+
+body {
+   font-family: var(--ff-primary);
+   background-image: url("/src/bg-home.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   font-size: 1.6rem;
+
+   width: 100vw;
+   min-height: 100vh;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   gap: 3.2rem;
+   padding: 4rem 0 4rem 7.2rem;
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+   gap: 3.2rem;
+
+   font-weight: 400;
+   font-size: 2.16rem;
+   line-height: 2.2rem;
+}
+
+nav ul li:nth-child(4) {
+   display: none;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #C4C4CC;
+}
+
+nav ul li a:hover {
+   font-weight: 700;
+   color: var(--fc-hover);
+}
+
+.group {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 6.3rem 0 0 10rem;
+}
+
+.group-home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   padding-top: 17.2rem;
+}
+
+#app h1 {
+   color: var(--fc-heading);
+   font-weight: 700;
+   font-style: normal;
+   font-size: 4.8rem;
+   line-height: 6rem;
+   
+   margin-bottom: 2.4rem;
+}
+
+#app .group h1 {
+   margin-bottom: 1.6rem;
+}
+
+.text {
+   width: 64.8rem;
+}
+
+#app p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 160%;
+   color: var(--fc-text);
+}
+
+#app button {
+   text-transform: uppercase;
+   color: var(--fc-button);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+
+   background: none;
+   border: none;
+   border: .2rem solid var(--fc-button);
+   border-radius: .5rem;
+   cursor: pointer;
+
+   padding: 1.2rem 3.2rem;
+}
+
+.group button {
+   margin-left: 10rem;
+}
