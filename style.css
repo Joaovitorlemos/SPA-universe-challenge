@@ -16,7 +16,7 @@
 
 body {
    font-family: var(--ff-primary);
-   background-image: url("/src/bg-home.png");
+   background-image: url("/images/bg-home.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
