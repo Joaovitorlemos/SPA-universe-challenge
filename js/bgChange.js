@@ -1,4 +1,4 @@
-export default function bgChange() {
+export function bgChange() {
   const getPathname = () => {
     const pathname = window.location.pathname
     return pathname.charAt(0) === '/' ? pathname.slice(1) : pathname

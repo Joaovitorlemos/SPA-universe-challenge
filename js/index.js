@@ -1,4 +1,4 @@
-import bgChange from "./bgChange.js"
+import { bgChange } from "./bgChange.js"
 
 const routes = {
    "/": "pages/home.html",
@@ -11,13 +11,14 @@ function route(event) {
    event = event || window.event
    event.preventDefault()
    
-   window.history.pushState({}, "", event.target.href)
+   const test = window.history.pushState({}, "", event.target.href)
+   console.log(test)
    
    handle()
-
+   
    const getPathname = () => {
-      const path = window.location.pathname
-      return path.charAt(0) === '/' ? path.slice(1) : path
+      const pathname = window.location.pathname
+      return pathname.charAt(0) === '/' ? pathname.slice(1) : pathname
    }
 
    function setBodyBackground() {
@@ -63,9 +64,3 @@ handle()
 
 window.onpopstate = () => handle()
 window.route = () => route()
-
-
-const getPathname = () => {
-   const pathname = window.location.pathname
-   return pathname.charAt(0) === '/' ? pathname.slice(1) : pathname
- }

@@ -96,7 +96,7 @@ nav ul li a:hover {
    color: var(--fc-text);
 }
 
-#app button {
+#app .button {
    text-transform: uppercase;
    color: var(--fc-button);
    font-style: normal;
@@ -105,6 +105,7 @@ nav ul li a:hover {
    line-height: 2.4rem;
 
    background: none;
+   text-decoration: none;
    border: none;
    border: .2rem solid var(--fc-button);
    border-radius: .5rem;
@@ -113,6 +114,6 @@ nav ul li a:hover {
    padding: 1.2rem 3.2rem;
 }
 
-.group button {
+.group .button {
    margin-left: 10rem;
 }
